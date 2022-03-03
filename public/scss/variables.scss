@@ -1,0 +1,155 @@
+// Font Family
+$font-default: 'Open Sans', sans-serif;
+$font-primary: 'Playfair Display', serif;
+$fontawesome: "Font Awesome 5 Pro";
+$font-secondary: 'Poppins', sans-serif;
+$roboto : "Roboto", sans-serif;
+
+
+$default: #444444;
+$primary: #cda45e;
+$secondary: #1a1814;
+
+// Colors ---------------
+$white: #ffffff;
+
+$black: #222222;
+$black-2: #070337;
+$black-3: #021937;
+$black-4: #0a0030;
+$black-5: #011126;
+$black-6: #011224;
+$black-7: #0f1432;
+$black-8: #1c213e;
+$black-9: #132339;
+
+// grey colors
+$grey:#f5faff;
+$grey-2:#dadada;
+$grey-3:#f4f9fd;
+$grey-4:#dbdbdb;
+$grey-5:#faf9ff;
+$grey-6:#f0f4f8;
+$grey-7:#c8c8c8;
+$grey-8:#e6ebf3;
+$grey-9:#fafafb;
+$grey-10:#a29696;
+$grey-11:#eaeff5;
+$grey-12:#f7f7fc;
+$grey-13:#f2f7ff;
+$grey-14:#7a797f;
+$grey-15:#eeedf2;
+$grey-16:#f6f6f7;
+$grey-17:#8e8c94;
+$grey-18:#f5f5f7;
+$grey-19:#9b9aa4;
+$grey-20:#f8f8f8;
+
+// purple colors
+
+$purple-dark-3: #120522;
+$purple-dark-2:#1b0834;
+$purple-dark-1: #36175E;
+$purple:#5B1BAC;
+$purple-1: #6b32b4;
+$purple-4: #9353E4;
+
+
+// basic color
+
+/* colors home 1*/
+$w-purple: #7127ea; //home 1 theme
+$w-purple-2: #8f16c9;
+$w-purple-3: #c854ff;
+$w-purple-4: #9353E4;
+$w-purple-5: #7f6cc1;
+$w-purple-6: #6c63ff; // home 4 theme
+$w-blue: #2f80ed; // home 2 theme
+$w-blue-2: #03a6ff;
+$w-blue-3: #116ae1;
+$w-blue-4: #0242fd;
+$w-blue-5: #005ad3;
+$w-blue-6: #0151bd;
+$w-blue-7: #1c7df8;  // home 5 theme
+$w-blue-8: #425b76;  
+$w-blue-9: #378bf5;  
+$w-blue-10: #5f55ff;  
+$w-dark-blue: #063e85;  
+$w-blue-soft: #e5f6ff;
+$w-blue-soft-2: #cdedff;
+$w-green: #11b50d;
+$w-green-2: #179d50;
+$w-green-3: #27ae60;
+$w-green-4: #cfe9e2;
+$w-green-5: #3ac81f;
+$w-pink: #f385df;
+$w-pink-2: #fd4b85;
+$w-pink-3: #fe0c7d;
+$w-pink-4: #fe1a86;
+$w-pink-soft: #fff6fa;
+$w-pink-soft-2: #fbe0e9;
+$w-red: #e50351;
+$w-red-2: #e51515;
+$w-yellow: #fbad26;
+$w-yellow-2: #f5a706;
+$w-yellow-3: #ffb543;
+$w-yellow-4: #fa8a19;
+$w-yellow-soft: #fff9ed;
+$w-cream: #feeedf;
+
+
+
+$body-text-color: #6c6a8a;
+$w-text-white: #ffffff;
+$w-text: #57556a;
+$w-text-2: #8f959d;
+$w-text-3: #5f5d72;
+$w-text-4: #524e65;
+$w-text-5: #474554;
+$w-text-6: #868d94;
+$w-text-7: #52575e;
+$w-text-8: #625e6e;
+$w-text-9: #9da4ac;
+$w-text-10: #888792;
+$w-text-11: #6d737a;
+$w-text-12: #545b65;
+$w-text-13: #86847d;
+$w-text-14: #5d5c72;
+$w-text-15: #c3ceda;
+$w-text-16: #8c8c97;
+$w-text-17: #6a727f;
+$w-text-18: #7a8189;
+$w-text-19: #9499ae;
+
+//border colors
+$border:#c7ced4;
+$border-2:#e7ecf1;
+$border-3:#eaedff;
+$border-4:#f2f0fa;
+$border-5:#f3f3f3;
+$border-6:#f1f1f3;
+$border-7:#e5e7e9;
+$border-8:#f4f4f4;
+
+
+// Heading Color
+$heading-color: #070337;
+
+
+// Soft color
+$black-soft:#38516c;
+
+
+
+
+
+// Responsive Variables
+$xxl: 'only screen and (min-width: 1400px)';
+$xl: 'only screen and (min-width: 1201px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xs:'(max-width: 575px)';
+$xxl1: '(min-width: 1440px) and(max-width: 1919px)';
+$xxl2: '(min-width: 1920px)';
+
