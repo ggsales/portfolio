@@ -40,13 +40,15 @@ export default function Header() {
                            <NavBarMain />
                         </div>
                      </div>
-                     <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6">
+                     <div className="col-xxl-4 col-xl-4 col-lg-3 col-md-6 col-6">
                         <div className='d-flex align-items-center justify-content-end'>
-                           <select defaultValue="PT-BR">
-                              <option value="PT-BR">PT-BR</option>
-                              <option value="US-EN">US-EN</option>
-                           </select>
-                           
+                           <div className='select-wrapper fas fa-angle-down'>
+                              <select defaultValue="" id="translate-btn">
+                                 <option value=""></option>
+                                 <option value="pt-br">PT-BR</option>
+                                 <option value="en-us">EN-US</option>
+                              </select>
+                           </div>
                         </div>
                      </div>
                      <div className="col-xxl-1 col-xl-1 col-lg-1 col-md-6 col-6">
