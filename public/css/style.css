@@ -8585,4 +8585,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   .homes h1, .homes .h1 {
     padding-top: 100vh; }
 
+.hero {
+  padding-top: 150px;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9; }
+  .hero h1, .hero .h1 {
+    text-align: center;
+    color: #ffffff; }
+
 /*# sourceMappingURL=style.css.map */
