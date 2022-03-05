@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    @media #{$xs, $sm, $md}{
+        display: none;
+    }
     &:hover{
         color: #78628f;
     }
@@ -44,15 +47,26 @@
 
 
 .actived{
-    border-bottom: 3px solid #C4B57E;
     padding: 3px 5px;
     transition: ease-in 0.5s;
+    animation: actived-animation 2s linear infinite alternate;
 }
 .actived-mobile{
-    border-bottom: 3px solid #C4B57E;
+    border-bottom: 3px solid #9b1c0b;
     padding: 3px 5px;
     width: 150px;
     transition: ease-in 0.5s;
+}
+
+
+
+@keyframes actived-animation{
+    0%{
+        border-bottom: 3px solid #9b1c0b;
+    }
+    100%{
+        border-bottom: 3px solid #db6262;
+    }
 }
 
 .header {
