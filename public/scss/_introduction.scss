@@ -1,0 +1,17 @@
+.introduction{
+    &__area{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
+        border: 6px solid #AB7ED9;
+        margin: 1px;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 45px;
+        font-family: $roboto;
+        font-weight: 700;
+        color: #fff;
+    }
+
+  
+}

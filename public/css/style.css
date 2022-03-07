@@ -8455,4 +8455,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   100% {
     box-shadow: 0px 2px 10px 1px #b93c51; } }
 
+.introduction__area {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
+  border: 6px solid #AB7ED9;
+  margin: 1px; }
+
+.introduction__title {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
