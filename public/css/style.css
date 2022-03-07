@@ -7926,7 +7926,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 #translate-btn {
   background: none;
   width: 75px;
-  height: 55px;
+  height: 75px;
   border-radius: 10px;
   border: none;
   color: #ffffff;
@@ -7934,7 +7934,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-repeat: no-repeat;
   background-position: center;
   appearance: none;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  text-align: center;
+  font-family: "Roboto", sans-serif; }
   @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
     #translate-btn {
       display: none; } }
@@ -8271,7 +8276,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 /*----------------------------------------*/
 .hero__area {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
     .hero__area .text-hero-wrapper {
       display: flex;
       flex-direction: column;
@@ -8328,6 +8333,62 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .hero__area .hero-img-right img {
         margin-top: 80px; } }
+  .hero__area .btn-hero {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px; }
+    @media (max-width: 575px) {
+      .hero__area .btn-hero {
+        flex-direction: column;
+        margin-top: 30px; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+      .hero__area .btn-hero {
+        justify-content: center;
+        margin-top: 30px; } }
+    .hero__area .btn-hero i {
+      padding: 8px 70px;
+      border-radius: 10px;
+      background: #fff;
+      color: #000;
+      border: 2px solid #b93c51;
+      box-shadow: 0px 1px 7px 1px #b93c51;
+      font-weight: 500;
+      animation: btn-animation 2s linear infinite alternate;
+      cursor: pointer;
+      transition: 0.5s linear; }
+      .hero__area .btn-hero i:hover {
+        background-color: #b93c51;
+        color: #fff; }
+      .hero__area .btn-hero i::before {
+        padding-right: 20px; }
+      .hero__area .btn-hero i:first-child {
+        margin-right: 5%; }
+        @media (max-width: 575px) {
+          .hero__area .btn-hero i:first-child {
+            margin-right: 0;
+            margin-bottom: 30px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1200px), only screen and (min-width: 1201px) and (max-width: 1399px) {
+        .hero__area .btn-hero i {
+          padding: 7px 54px; } }
+      @media (max-width: 575px) {
+        .hero__area .btn-hero i {
+          padding: 12px 55px;
+          display: flex;
+          justify-content: center; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+        .hero__area .btn-hero i {
+          padding: 10px 55px;
+          display: flex;
+          justify-content: center; } }
+    .hero__area .btn-hero .btn-github::after {
+      content: "Github";
+      font-family: "Roboto", sans-serif;
+      font-weight: 600; }
+    .hero__area .btn-hero .btn-linkedin::after {
+      content: "Linkedin";
+      font-family: "Roboto", sans-serif;
+      font-weight: 600; }
 
 .hero__height {
   min-height: 100vh; }
@@ -8387,5 +8448,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     transform: translateY(-20px); }
   100% {
     transform: translateY(0px); } }
+
+@keyframes btn-animation {
+  0% {
+    box-shadow: 0px 2px 10px 1px #f8f8f8; }
+  100% {
+    box-shadow: 0px 2px 10px 1px #b93c51; } }
 
 /*# sourceMappingURL=style.css.map */

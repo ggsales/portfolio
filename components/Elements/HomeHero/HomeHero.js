@@ -1,4 +1,5 @@
-import Typist from "react-typist"
+import Typist from "react-typist";
+import Link from "next/link";
 
 
 export default function HomeHero() {
@@ -13,8 +14,13 @@ export default function HomeHero() {
                             <Typist.Delay ms={900} />
                             <span> Desenvolvedor Front-end </span>
                         </Typist>
+                        <div className="btn-hero wow fadeInLeft" data-wow-delay="1.8s">
+                            <Link href="https://github.com/ggsales"><i className="fab fa-github btn-github"></i></Link>
+                            <Link href="https://www.linkedin.com/in/giovanisales/"><i className="fab fa-linkedin btn-linkedin"></i></Link>
+                        </div>
 
                     </div>
+
                     <div className="col-lg-4 col-xl-5 wow fadeInLeft col-md-12" data-wow-delay="1.2s">
                         <div className="hero__thumb-shape shape-2 hero-img-right">
                             <img src="./img/hero/hero-img.png" alt="ilustrator-developer-image" />

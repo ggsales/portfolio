@@ -6,12 +6,11 @@
     &__area{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;  
         & .text-hero-wrapper{
-            @media #{$md}{
+            @media #{$md, $sm}{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
             }
             @media #{$xs, $sm}{
                 margin-top: 35%;
@@ -74,6 +73,77 @@
                 }
 
             }
+        }
+
+        & .btn-hero{
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            margin-top: 20px;
+            @media #{$xs}{
+                flex-direction: column;
+                margin-top: 30px;
+            }
+            @media #{$sm, $md}{
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            & i{
+                padding: 8px 70px;
+                border-radius: 10px;
+                background: #fff;
+                color: #000;
+                border: 2px solid  rgb(185, 60, 81);;
+                box-shadow: 0px 1px 7px 1px  rgb(185, 60, 81);
+                font-weight: 500;
+                animation: btn-animation 2s linear infinite alternate;
+                cursor: pointer;
+                transition: 0.5s linear;
+                &:hover{
+                    background-color:  rgb(185, 60, 81);
+                    color: #fff;
+                }
+                &::before{
+                    padding-right: 20px;
+                }
+                &:first-child{
+                    margin-right: 5%;
+                    @media #{$xs}{
+                        margin-right: 0;
+                        margin-bottom: 30px;
+                    }
+                }
+                @media #{$lg, $xl}{
+                    padding: 7px 54px;
+                }
+                @media #{$xs}{
+                    padding: 12px 55px;
+                    display: flex;
+                    justify-content: center;
+                }
+                @media #{$sm, $md}{
+                    padding: 10px 55px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            & .btn-github{
+                &::after{
+                    content: "Github";
+                    font-family: $roboto;
+                    font-weight: 600;
+                }
+            }
+            & .btn-linkedin{
+                &::after{
+                    content: "Linkedin";
+                    font-family: $roboto;
+                    font-weight: 600;
+                }
+            }
+            
+           
         }
     }
     &__height{
@@ -139,6 +209,16 @@
     }
     100%{
       transform: translateY(0px);
+    }
+}
+
+
+@keyframes btn-animation{
+    0%{
+        box-shadow: 0px 2px 10px 1px  rgb(248, 248, 248);
+    }
+    100%{
+        box-shadow: 0px 2px 10px 1px  rgb(185, 60, 81);
     }
 }
 
