@@ -8457,7 +8457,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .introduction__area {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
-  border: 6px solid #AB7ED9;
+  border: 6px solid #b93c51;
   margin: 1px; }
 
 .introduction__title {
@@ -8466,5 +8466,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #fff; }
+
+.introduction__img {
+  max-width: 300px; }
+
+.introduction__left-box {
+  padding: 10px; }
+  .introduction__left-box h1, .introduction__left-box .h1 {
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b93c51; }
+  .introduction__left-box p {
+    color: #fff; }
+
+.introduction__right-box {
+  display: flex;
+  justify-content: flex-end; }
+  .introduction__right-box .right-flex-contents {
+    width: 50%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 .introduction{
     &__area{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
-        border: 6px solid #AB7ED9;
+        border: 6px solid rgb(185, 60, 81);
         margin: 1px;
     }
 
@@ -11,6 +11,32 @@
         font-family: $roboto;
         font-weight: 700;
         color: #fff;
+    }
+    &__img{
+        max-width: 300px;
+    }
+    &__left-box{
+        padding: 10px;
+        & h1{
+            color: #fff;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgb(185, 60, 81);
+        }
+        & p{
+            color: #fff;
+        }
+    }
+    &__right-box{
+        display: flex;
+        justify-content: flex-end;
+
+        & .right-flex-contents{
+            width: 50%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+
+        }
     }
 
   

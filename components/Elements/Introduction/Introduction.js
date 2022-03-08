@@ -4,24 +4,24 @@
 export default function Introduction() {
     return (
         <section className="introduction__area">
-            <h3 className="introduction__title">Introdução</h3>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8 offset-md-1 d-flex align-items-center justify-content-start">
-                        <h1>Sobre mim</h1>
-                        <hr />
+                    <div className="col-12">
+                        <h3 className="introduction__title">Introdução</h3>
                     </div>
-                    <div className="col-md-9 offset-md-1   d-flex align-items-center justify-content-end">
-                        <h1>Formação</h1>
-                    </div>
-                    <div className="col-md-8 offset-md-1  d-flex align-items-center justify-content-start">
-                        <h1>Jornada como dev</h1>
-                    </div>
-
                 </div>
-
             </div>
-
+            <div className="row align-items-center">
+                <div className="col-lg-4 offset-lg-2 col-xl-3 offset-xl-2 col-xxl-3 offset-xxl-2">
+                    <img src="./img/introduction/about-2.png" alt="" className="introduction__img" />
+                </div>
+                <div className="col-lg-3 col-xs-12">
+                    <div className="introduction__left-box">
+                        <h1>Sobre mim</h1>
+                        <p>Me chamo Giovani Sales, tenho 21 anos, nasci e cresci no Brasil, no estado de São Paulo.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
