@@ -2,7 +2,7 @@
     &__area{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
         border: 6px solid rgb(185, 60, 81);
-        margin: 1px;
+        margin: 1px;padding-bottom: 50px;
     }
 
     &__title{
@@ -11,33 +11,62 @@
         font-family: $roboto;
         font-weight: 700;
         color: #fff;
+        margin-top: 30px;
     }
     &__img{
         max-width: 300px;
+        animation: img-introduction-animation 2s linear infinite alternate;
+        @media #{$xs}{
+            width: 100%;
+        }
+        @media #{$sm, $md, $lg, }{
+            margin-bottom: 50px;
+        }
     }
-    &__left-box{
+    &__box-contents{
         padding: 10px;
-        & h1{
+    }
+    &__content-title{
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(185, 60, 81);
+        &_2{
+            text-align: end;
             color: #fff;
             text-transform: uppercase;
             border-bottom: 1px solid rgb(185, 60, 81);
         }
-        & p{
-            color: #fff;
+
+    }
+    &__content-text{
+        color: #fff;
+        @media #{$xs}{
+            margin-bottom: 80px;
+         }
+
+    }
+    &__mobile-flex-img{
+        @media #{$xs}{
+           display: flex;
+           justify-content: end;
         }
     }
-    &__right-box{
-        display: flex;
-        justify-content: flex-end;
-
-        & .right-flex-contents{
-            width: 50%;
-            margin-top: 50px;
+    &__flex-reverse-mobile{
+        @media #{$xs}{
             display: flex;
-            justify-content: space-around;
-
-        }
+            flex-direction: column-reverse;
+         }
     }
 
   
+}
+
+
+@keyframes img-introduction-animation{
+    0%{
+      transform: translateY(-15px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
 }

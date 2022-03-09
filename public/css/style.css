@@ -8458,34 +8458,60 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .introduction__area {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
   border: 6px solid #b93c51;
-  margin: 1px; }
+  margin: 1px;
+  padding-bottom: 50px; }
 
 .introduction__title {
   text-align: center;
   font-size: 45px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #fff; }
+  color: #fff;
+  margin-top: 30px; }
 
 .introduction__img {
-  max-width: 300px; }
+  max-width: 300px;
+  animation: img-introduction-animation 2s linear infinite alternate; }
+  @media (max-width: 575px) {
+    .introduction__img {
+      width: 100%; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1200px) {
+    .introduction__img {
+      margin-bottom: 50px; } }
 
-.introduction__left-box {
+.introduction__box-contents {
   padding: 10px; }
-  .introduction__left-box h1, .introduction__left-box .h1 {
+
+.introduction__content-title {
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b93c51; }
+  .introduction__content-title_2 {
+    text-align: end;
     color: #fff;
     text-transform: uppercase;
     border-bottom: 1px solid #b93c51; }
-  .introduction__left-box p {
-    color: #fff; }
 
-.introduction__right-box {
-  display: flex;
-  justify-content: flex-end; }
-  .introduction__right-box .right-flex-contents {
-    width: 50%;
-    margin-top: 50px;
+.introduction__content-text {
+  color: #fff; }
+  @media (max-width: 575px) {
+    .introduction__content-text {
+      margin-bottom: 80px; } }
+
+@media (max-width: 575px) {
+  .introduction__mobile-flex-img {
     display: flex;
-    justify-content: space-around; }
+    justify-content: end; } }
+
+@media (max-width: 575px) {
+  .introduction__flex-reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse; } }
+
+@keyframes img-introduction-animation {
+  0% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0px); } }
 
 /*# sourceMappingURL=style.css.map */
