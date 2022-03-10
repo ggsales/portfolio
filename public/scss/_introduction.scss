@@ -2,7 +2,8 @@
     &__area{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
         border: 6px solid rgb(185, 60, 81);
-        margin: 1px;padding-bottom: 50px;
+        margin: 1px;
+        padding-bottom: 50px;
     }
 
     &__title{
@@ -31,7 +32,7 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgb(185, 60, 81);
         &_2{
-            text-align: end;
+            text-align:end;
             color: #fff;
             text-transform: uppercase;
             border-bottom: 1px solid rgb(185, 60, 81);
@@ -48,7 +49,7 @@
     &__mobile-flex-img{
         @media #{$xs}{
            display: flex;
-           justify-content: end;
+           justify-content: flex-end;
         }
     }
     &__flex-reverse-mobile{
