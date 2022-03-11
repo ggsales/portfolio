@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import Ability from "./SkillsOptions/ability"
-import Technologies from "./SkillsOptions/technologies"
+import Ability from "./SkillsOptions/Ability"
+import Technologies from "./SkillsOptions/Technologies"
 
 
 
@@ -9,11 +9,15 @@ export default function Skills(){
     const[tabCurrent, setTabCurrent] = useState("habilidade")
 
 
-    const handleNextSkill = (skill) =>{
-        setTabCurrent(skill)
+    const handleNextSkill = (skillCurrent) =>{
+        setTabCurrent(skillCurrent)
     }
 
-   
+   useEffect(() =>{
+       const handleTeste = (skill) =>{
+           setTabCurrent(skill)
+       }
+   }, [])
     
 
     return(
@@ -31,21 +35,18 @@ export default function Skills(){
                             <div className="row">
                                 <div className="col-lg-5">
                                     <div className="skills__btn-box">
-                                        <button onClick={() => handleNextSkill("habilidade")}   className={tabCurrent === "habilidade" ? "actived" : undefined}>Habilidades</button>
-                                        <button onClick={() => handleNextSkill("tecnologias")} className={tabCurrent === "tecnologias" ? "actived" : undefined}>Tecnologias</button>
+                                        <button onClick={() => setTabCurrent("habilidade")}  className={tabCurrent === "habilidade" ? "actived" : undefined}>Habilidades</button>
+                                        <button onClick={() => setTabCurrent("tecnologias")} className={tabCurrent === "tecnologias" ? "actived" : undefined}>Tecnologias</button>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
-                                    {tabCurrent === "habilidade" && <Ability/>}
-                                    {tabCurrent === "tecnologias" && <Technologies/> }
+                                    {tabCurrent === "habilidade" && <Ability/> }
+                                    {tabCurrent === "tecnologias" &&  <Technologies/> }
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-              
             </div>
 
         </section>

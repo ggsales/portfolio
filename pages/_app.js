@@ -1,10 +1,11 @@
-import '../public/css/fontAwesome5Pro.css'
-import '../public/css/elegantFont.css'
-import '../public/css/style.css'
-import '../public/css/animate.min.css'
-import '../public/css/default.css'
+import '../public/css/fontAwesome5Pro.css';
+import '../public/css/elegantFont.css';
+import '../public/css/style.css';
+import '../public/css/animate.min.css';
+import '../public/css/default.css';
 import React, { useEffect } from 'react';
-import Head from 'next/head'
+import 'react-circular-progressbar/dist/styles.css';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
 

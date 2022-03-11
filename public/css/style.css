@@ -8542,10 +8542,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       text-align: center; }
       .skills__btn-box button .actived {
         border-bottom: 1px solid #b93c51; }
+  .skills__ability-title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 50px; }
   .skills__ability-box {
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .skills__img-ability {
     max-width: 200px; }
   .skills__text-ability {
