@@ -26,7 +26,7 @@ export default function Skills(){
                 <div className="row">
                     <div className="col-12">
                         <h1 className="skills__title">Conhecimentos</h1>
-                        <p className="skills__subtitle">Abaixo estão minhas habilidades como programador front-end, e com quais tecnologias trabalho.</p>
+                        <p className="skills__subtitle">Abaixo estão minhas habilidades como programador Front-end, e com quais tecnologias trabalho.</p>
                     </div>
                 </div>
                 <div className="container">
