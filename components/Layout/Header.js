@@ -18,16 +18,6 @@ export default function Header() {
       });
    }, [scroll]);
 
-   useEffect(() => {
-      let pathName = window.location.pathname.split("/")[1]
-      if (pathName === "") {
-         setCurrentNav("home")
-      } else {
-         setCurrentNav(pathName)
-      }
-
-
-   }, []);
 
    return (
       <>
@@ -72,19 +62,15 @@ export default function Header() {
                            </div>
                            <div className="logo">
                               <Link href="/"><a>
-                                 <img src="#" alt="logo" /></a></Link>
+                                 <img src="./img/nav/developer.png" alt="logo" /></a></Link>
                            </div>
                            <div className="sidebar__content">
                               <div className={`mobile-menu mean-container mt-80`}>
                                  <NavBarMobile />
                               </div>
-                              <div className="sidebar__info budget-mobile">
-                                 <Link href="/contato"><a className="w-btn d-block mt-100">ORÇAMENTO</a></Link>
-                              </div>
                            </div>
                         </div>
                      </div>
-                     {/* Body Overlay end     */}
                      <div className={`body-overlay ${!isToggled ? "" : "opened"}`} onClick={toggleTrueFalse}></div>
                   </div>
                </div>

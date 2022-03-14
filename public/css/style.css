@@ -7964,14 +7964,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .actived-mobile {
   border-bottom: 3px solid #9b1c0b;
   padding: 3px 5px;
-  width: 150px;
+  width: 60px;
   transition: ease-in 0.5s; }
 
 @keyframes actived-animation {
   0% {
-    border-bottom: 3px solid #9b1c0b; }
+    border-bottom: 3px solid #9b1c0b;
+    color: #b82a17; }
   100% {
-    border-bottom: 3px solid #db6262; } }
+    border-bottom: 3px solid #c2b7b7;
+    color: #b82a17; } }
 
 .header__area.sticky-2, .header__bottom.sticky-2 {
   left: 0;
@@ -8046,7 +8048,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .main-menu ul li {
   display: inline-block;
   position: relative;
-  margin-top: 10px; }
+  margin-top: 10px;
+  color: #fff;
+  transition: linear 0.5s; }
+  .main-menu ul li:hover {
+    color: #b82a17; }
   .main-menu ul li:not(:last-child) {
     margin-right: 25px; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -8074,13 +8080,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     padding: 10px 5px;
     border-radius: 7px;
     text-transform: uppercase;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    cursor: pointer; }
     .main-menu ul li a:hover {
-      color: #C4B57E; }
+      color: #b82a17; }
   .main-menu ul li:hover > a {
-    color: #C4B57E; }
+    color: #b82a17; }
     .main-menu ul li:hover > a::after {
-      color: #C4B57E; }
+      color: #b82a17; }
 
 .sticky .main-menu ul {
   margin-bottom: 10px; }
@@ -8250,6 +8257,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   min-height: auto;
   background: none; }
 
+.mean-container .mean-nav li {
+  display: flex;
+  justify-content: center; }
+
 .mean-container .mean-nav > ul {
   padding: 0;
   margin: 0;
@@ -8261,16 +8272,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   display: none !important; }
 
 .mean-container .mean-nav ul li a {
-  width: 100%;
-  padding: 10px 0;
+  width: 50%;
+  padding: 15px 0;
+  border-radius: 20%;
+  text-align: center;
   color: #222222;
-  border-top: 1px solid #dedee3;
   font-size: 13px;
   font-weight: 600;
-  display: block; }
+  display: block;
+  text-transform: uppercase; }
 
 .mean-container .mean-nav ul li a:hover {
-  color: #C4B57E;
+  color: #b82a17;
   letter-spacing: 2px; }
 
 .list-colapse {

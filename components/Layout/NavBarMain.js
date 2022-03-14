@@ -1,31 +1,72 @@
 import React from 'react'
-import Link from 'next/link'
+import { Link } from 'react-scroll/modules';
 import { useState, useEffect } from 'react'
 
 export default function NavBarMain() {
     const [tabCurrent, setTabCurrent] = useState("inicio")
-    
-        
 
-        useEffect(() => {
-            let pathName = window.location.pathname.split("/")[1]
-            if(pathName === ""){
-                setTabCurrent("inicio")
-            }else{
-                setTabCurrent(pathName)
-            }
+    const handleNextCurrent = (currentItem) => {
+        setTabCurrent(currentItem)
+    }
 
-        }, []);
-    
+
+
 
     return (
         <nav>
             <ul>
-                <li  className={tabCurrent === "inicio" ? "actived" : undefined}><Link href="/"><a>Início</a></Link></li>
-                <li  className={tabCurrent === "introducao" ? "actived" : undefined}><Link  href="/"><a>Introdução</a></Link></li> 
-                <li  className={tabCurrent === "conhecimentos" ? "actived" : undefined}><Link  href="/"><a >Conhecimentos</a></Link></li>                 
-                <li  className={tabCurrent === "experiencias" ? "actived" : undefined}><Link href="/"><a>Experiências</a></Link></li> 
-                <li  className={tabCurrent === "contato" ? "actived" : undefined}><Link href="/"><a>Contato</a></Link></li> 
+                <li>
+                    <Link to='hero__area'
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className={tabCurrent === "inicio" ? "actived" : undefined}
+                        onClick={() => handleNextCurrent("inicio")}>
+                        Início
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="introduction__area"
+                        spy={true} smooth={true}
+                        duration={500}
+                        className={tabCurrent === "introduction" ? "actived" : undefined}
+                        onClick={() => handleNextCurrent("introduction")}>
+                        Introdução
+                    </Link>
+                </li>
+                <li>
+                    <Link to="skills"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className={tabCurrent === "skills" ? "actived" : undefined}
+                        onClick={() => handleNextCurrent("skills")}>
+                        Conhecimentos
+                    </Link>
+                </li>
+                <li>
+                    <Link to="cases"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className={tabCurrent === "cases" ? "actived" : undefined}
+                        onClick={() => handleNextCurrent("cases")}>
+                        Experiências
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="contato" 
+                        spy={true} 
+                        smooth={true} 
+                        duration={500} 
+                        className={tabCurrent === "contact" ? "actived" : undefined}
+                        onClick={() => handleNextCurrent("contact")}>
+                        Contato
+                    </Link>
+                </li>
+                
             </ul>
         </nav>
 
