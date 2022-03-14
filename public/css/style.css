@@ -8711,15 +8711,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       display: none; } }
   .cases .carousel-cases .slick-dots button::before {
     color: #fff; }
+  @media (max-width: 575px) {
+    .cases .carousel-cases .case-mobile-1 {
+      background-image: url(../img/cases/fluabit-site-mobile.png); } }
+  @media (max-width: 575px) {
+    .cases .carousel-cases .case-mobile-2 {
+      background-image: url(../img/cases/buffet-lavida-mobile.png); } }
+  @media (max-width: 575px) {
+    .cases .carousel-cases .case-mobile-3 {
+      background-image: url(../img/cases/alurakut-mobile.png); } }
+  @media (max-width: 575px) {
+    .cases .carousel-cases .case-mobile-1, .cases .carousel-cases .case-mobile-2, .cases .carousel-cases .case-mobile-3 {
+      height: 550px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 20px; } }
   .cases .carousel-cases .case {
     position: relative; }
     .cases .carousel-cases .case img {
       width: 100%;
       position: relative;
       border-radius: 20px; }
-      .cases .carousel-cases .case img:hover {
-        width: 103%;
-        z-index: 2; }
+      @media (max-width: 575px) {
+        .cases .carousel-cases .case img {
+          display: none; } }
   .cases__full-overlay {
     position: absolute;
     width: 100%;
@@ -8728,6 +8744,83 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     top: 0;
     left: 0;
     right: 0;
-    border-radius: 20px; }
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse; }
+  .cases__content-box-cases {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70px;
+    border-radius: 0px 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s linear; }
+    @media (max-width: 575px) {
+      .cases__content-box-cases {
+        height: 90px; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .cases__content-box-cases {
+        height: 60px; } }
+    .cases__content-box-cases:hover {
+      height: 80px; }
+      @media (max-width: 575px) {
+        .cases__content-box-cases:hover {
+          height: 100px; } }
+    .cases__content-box-cases h3, .cases__content-box-cases .h3 {
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      border-bottom: 1px solid #b93c51; }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .cases__content-box-cases h3, .cases__content-box-cases .h3 {
+          font-size: 15px; } }
+    .cases__content-box-cases button {
+      background-image: linear-gradient(to right, #6441A5 0%, #2a0845 51%, #6441A5 100%);
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 20px;
+      padding: 1px 20px;
+      text-align: center;
+      font-size: 13px;
+      background-size: 200% auto;
+      box-shadow: 0 0 5px #eee;
+      transition: 0.5s linear;
+      display: block; }
+      @media (max-width: 575px) {
+        .cases__content-box-cases button {
+          padding: 6px 35px;
+          font-size: 15px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .cases__content-box-cases button {
+          font-size: 11px; } }
+      .cases__content-box-cases button:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none; }
+
+.btn-grad {
+  background-image: linear-gradient(to right, #6441A5 0%, #2a0845 51%, #6441A5 100%); }
+
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block; }
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
