@@ -12,7 +12,7 @@ export default function Form() {
         console.log(data)
      }
 
-     
+
     return (
         <>
             {!formSuccess && <form onSubmit={handleSubmit(onSubmit)}>
@@ -50,7 +50,7 @@ export default function Form() {
                 {errors?.message?.type === "maxLength" && (<p className="errorMsg">O limite máximo é de 2048 caracteres.</p>)}
 
                 <button className="btn-contact" type="submit" disabled={isLoading} > {!isLoading ? "Enviar" : "Enviado..."}</button>
-                {isSubmitted && Object.keys(errors).length !== 0 && <p className="errorMsg mt-5">Não foi possível prosseguir com o envio, pois o formulário possui erros. Corrija os erros e tente novamente, por favor. </p>}
+                {isSubmitted && Object.keys(errors).length !== 0 && <p className="errorMsg mt-5">Não foi possível prosseguir com o envio pois o formulário possui erros. Corrija os erros e tente novamente, por favor. </p>}
             </form>}
         </>
     )
