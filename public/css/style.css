@@ -8843,6 +8843,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding-bottom: 150px;
   border: 3px solid #b93c51;
   margin: 1px; }
+  .contact .btn-contact {
+    text-align: center;
+    color: #fff;
+    padding: 8px 75px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: none;
+    background-image: linear-gradient(to right, #6441A5 0%, #2a0845 51%, #6441A5 100%);
+    background-size: 600%;
+    box-shadow: 0 0 5px #fff;
+    transition: 0.9s; }
+    .contact .btn-contact:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none; }
   .contact__title {
     text-align: center;
     font-size: 45px;
@@ -8851,10 +8868,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     color: #fff;
     margin-top: 30px;
     margin-bottom: 60px; }
+  .contact__form-title {
+    color: #fff;
+    margin-bottom: 30px; }
   .contact__form-area {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
+    @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+      .contact__form-area {
+        align-items: center; } }
     .contact__form-area form {
       background-image: linear-gradient(to right, #000000 20%, #434343 45%, #000000 100%);
       background-size: 200% auto;
@@ -8906,29 +8929,34 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     flex-direction: column;
     margin-top: 40px;
     border-left: 2px solid #fff; }
+    @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+      .contact__btn-box {
+        border-top: 2px solid #fff;
+        border-left: 0;
+        align-items: center;
+        padding-top: 15px; } }
     .contact__btn-box .btn-contact {
       margin-left: 30px; }
+      @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+        .contact__btn-box .btn-contact {
+          margin-left: 0;
+          padding: 8px 100px; } }
+    .contact__btn-box__title {
+      color: #fff;
+      margin-left: 30px;
+      font-style: italic; }
+    .contact__btn-box__subtitle {
+      font-size: 14px;
+      color: #fff;
+      margin-left: 30px;
+      margin-bottom: 30px; }
   .contact__links-btn-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
-  .contact .btn-contact {
-    text-align: center;
-    color: #fff;
-    padding: 8px 75px;
-    border-radius: 25px;
-    margin-bottom: 30px;
-    display: inline-block;
-    border: none;
-    background-image: linear-gradient(to right, #6441A5 0%, #2a0845 51%, #6441A5 100%);
-    background-size: 600%;
-    box-shadow: 0 0 5px #fff;
-    transition: 0.9s; }
-    .contact .btn-contact:hover {
-      background-position: right center;
-      /* change the direction of the change here */
-      color: #fff;
-      text-decoration: none; }
+    @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+      .contact__links-btn-wrapper {
+        justify-content: center; } }
 
 @keyframes form-animation {
   0% {
