@@ -1,21 +1,30 @@
-import { useState } from "react";
-import {useForm} from 'react-hook-form';
+import { useRef, useState } from "react";
+import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 
 
 
 export default function Form() {
-      const {register, handleSubmit, formState: {errors, isSubmitted} } = useForm();
-      const [formSuccess, setFormSuccess] = useState(false)
-      const [isLoading, setIsLoading] = useState(false)
-      
-      const onSubmit = data => {
-        console.log(data)
-     }
+    const { register, handleSubmit, formState: { errors, isSubmitted } } = useForm();
+    const [formSuccess, setFormSuccess] = useState(false)
+    const [isLoading, setIsLoading] = useState(false);
+    const form = useRef();
+
+    const onSubmit = (e) => {
+        emailjs.sendForm('service_igdytsf', 'portfolio_api', form.current, 'A0dMV-0leATSRjiRv')
+            .then((result) => {
+                console.log(result.text);
+                setFormSuccess(true)
+            }, (error) => {
+                console.log(error.text);
+            });
+
+    }
 
 
     return (
         <>
-            {!formSuccess && <form onSubmit={handleSubmit(onSubmit)}>
+            {!formSuccess && <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                 <label>Nome: *</label>
                 <input className={`${errors.name && "invalid"}`}
                     {...register("name", {
@@ -23,6 +32,7 @@ export default function Form() {
                         minLength: 4,
                         pattern: /^[A-Za-z0-9 ]+$/i
                     })}
+                    name="name"
                 />
                 {errors?.name?.type === "required" && <p className="errorMsg">Este campo é obrigatório.</p>}
                 {errors?.name?.type === "minLength" && (<p className="errorMsg">O minimo é de 4 caracteres.</p>)}
@@ -34,6 +44,7 @@ export default function Form() {
                         required: true,
                         pattern: /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
                     })}
+                    name="email"
                 />
                 {errors?.email?.type === "required" && <p className="errorMsg">Este campo é obrigatório.</p>}
                 {errors?.email?.type === "pattern" && (<p className="errorMsg">Insira um E-mail válido.</p>)}
@@ -44,6 +55,7 @@ export default function Form() {
                         required: true,
                         maxLength: 2048
                     })}
+                    name="message"
                 />
 
                 {errors?.message?.type === "required" && <p className="errorMsg">Este campo é obrigatório.</p>}
@@ -52,6 +64,15 @@ export default function Form() {
                 <button className="btn-contact" type="submit" disabled={isLoading} > {!isLoading ? "Enviar" : "Enviado..."}</button>
                 {isSubmitted && Object.keys(errors).length !== 0 && <p className="errorMsg mt-5">Não foi possível prosseguir com o envio pois o formulário possui erros. Corrija os erros e tente novamente, por favor. </p>}
             </form>}
+            {formSuccess &&
+                <div className="animation-box-success">
+                    <div className="box-success">
+                        <div className="content-positions">
+                            <i className="far fa-check-square mb-30"></i>
+                            <p className="errorMsg">Sua mensagem foi enviada com sucesso! </p>
+                        </div>
+                    </div>
+                </div>}
         </>
     )
 }

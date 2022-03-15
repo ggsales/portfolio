@@ -8909,7 +8909,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         margin-bottom: 30px;
         color: #fff;
         font-size: 14px;
-        padding: 0px 0px 0px 0px;
+        padding: 5px 5px 5px 5px;
         transition: 0.5s linear;
         padding-left: 10px; }
         .contact__form-area form input:hover {
@@ -8969,6 +8969,44 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
       .contact__links-btn-wrapper {
         justify-content: center; } }
+  .contact .animation-box-success {
+    animation: formSuccessAnimation 2s linear; }
+    @media (max-width: 575px) {
+      .contact .animation-box-success {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
+    .contact .animation-box-success .box-success {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      width: 380px;
+      height: 380px;
+      background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+      animation: form-animation 1.3s linear infinite alternate;
+      transition: 0.5s linear; }
+      @media (max-width: 575px) {
+        .contact .animation-box-success .box-success {
+          width: 100%; } }
+      .contact .animation-box-success .box-success .content-positions {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .contact .animation-box-success .box-success .content-positions i {
+          font-size: 85px;
+          color: #000000; }
+        .contact .animation-box-success .box-success .content-positions p {
+          color: #000000;
+          font-size: 23px;
+          text-align: center;
+          font-weight: 700; }
+
+@keyframes formSuccessAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes form-animation {
   0% {

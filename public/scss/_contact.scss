@@ -84,7 +84,7 @@
                 margin-bottom: 30px;
                 color: #fff;
                 font-size: 14px;
-                padding: 0px 0px 0px 0px;
+                padding:5px 5px 5px 5px;
                 transition: 0.5s linear;
                 padding-left: 10px;
                 &:hover{
@@ -165,7 +165,51 @@
 
 
     }
+    & .animation-box-success{
+        animation: formSuccessAnimation 2s linear;
+        @media #{$xs}{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        & .box-success{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            width: 380px;
+            height: 380px;
+            background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+            animation: form-animation 1.3s linear infinite alternate;
+            transition: 0.5s linear;
+            @media #{$xs}{
+                width: 100%;
+                
+            }
+    
+            & .content-positions{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                & i{
+                    font-size: 85px;
+                    color: #000000;
+                }
+    
+                & p{
+                    color: #000000;
+                    font-size: 23px;
+                    text-align: center;
+                    font-weight: 700;
+                }
+            }
+        }
+    
 
+    }
+    
   
 
 
@@ -176,6 +220,15 @@
 }
 
 
+@keyframes formSuccessAnimation {
+    0%   
+    { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
 
 
 
@@ -183,6 +236,7 @@
 @keyframes form-animation{
     0%{
         box-shadow: 0 0 10px #fff;
+
     }
     100%{
         box-shadow: 0 0 10px #2a0845;

@@ -17,13 +17,13 @@ export default function Contact() {
                 </div>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-1 col-xl-5 offset-xl-2">
-                        <div className="contact__form-area">
-                            <h6 className="contact__form-title">Envie uma mensagem diretamente do site preechendo o formulário abaixo.</h6>
+                        <div className="contact__form-area wow fadeInUp" data-wow-delay="0.5s">
+                            <h6 className="contact__form-title">Envie uma mensagem preechendo o formulário abaixo.</h6>
                             <Form />
                         </div>
                     </div>
                     <div className="col-lg-4 col-xl-4 contact__links-btn-wrapper">
-                        <div className="contact__btn-box">
+                        <div className="contact__btn-box wow fadeInLeft" data-wow-delay="0.8s">
                             <h2 className="contact__btn-box__title">Ou se preferir...</h2>
                             <h3 className="contact__btn-box__subtitle">Entre em contato clicando nos links abaixo.</h3>
                             <Link href="https://github.com/ggsales"><button className="fab fa-github btn-contact" /></Link>
