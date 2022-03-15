@@ -57,7 +57,7 @@ export default function NavBarMain() {
                 </li>
 
                 <li>
-                    <Link to="contato" 
+                    <Link to="contact" 
                         spy={true} 
                         smooth={true} 
                         duration={500} 

@@ -1,5 +1,6 @@
 
 import Cases from "../components/Elements/Cases/Cases";
+import Contact from "../components/Elements/Contact/Contact";
 import HomeHero from "../components/Elements/HomeHero/HomeHero";
 import Introduction from "../components/Elements/Introduction/Introduction";
 import Skills from "../components/Elements/Skills/Skills";
@@ -13,6 +14,7 @@ export default function Home() {
       <Introduction/>
       <Skills/>
       <Cases/>
+      <Contact/>
     </Layout1>
   )
 }
