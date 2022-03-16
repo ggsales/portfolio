@@ -62,7 +62,7 @@ export default function NavBarMobile() {
                 </li>
 
                 <li>
-                    <Link to="contato"
+                    <Link to="contact"
                         spy={true}
                         smooth={true}
                         duration={500}
