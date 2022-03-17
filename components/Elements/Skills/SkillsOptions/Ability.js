@@ -1,50 +1,34 @@
-
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 
 
 export default function Ability() {
-    const percentageApp = 60;
-    const percentageSite = 85;
     return (
         <>
             <div className="row">
                 <div className="col-lg-6 mobile-border">
-                    <div className="skills__ability-box">
+                    <div className="skills__ability-box wow fadeInLeft" data-wow-delay=".5s">
                         <img src="./img/skills/webapp.png" alt="" className="skills__img-ability" />
                         <h3 className="skills__text-ability"> Web Aplicações</h3>
                     </div>
-                    <div className="skills__progressbar-wrapper">
+                    <div className="skills__progressbar-wrapper wow fadeInUp" data-wow-delay=".7s">
                         <p className="skills__performance-title">Desempenho</p>
                         <div className="circle-progress-box">
-                            <CircularProgressbar
-                                value={percentageApp}
-                                strokeWidth={50}
-                                styles={buildStyles({
-                                    strokeLinecap: "butt"
-                                })}
-                            />
+                        <ProgressBar   variant="danger" animated now={55} />
                         </div>
                     </div>
                 </div>
 
                 <div className="col-lg-6">
-                    <div className="skills__ability-box">
+                    <div className="skills__ability-box wow fadeInLeft" data-wow-delay=".5s">
                         <img src="./img/skills/website-developer.png" alt="" className="skills__img-ability" />
                         <h3 className="skills__text-ability"> Websites</h3>
-
                     </div>
-                    <div className="skills__progressbar-wrapper">
+                    <div className="skills__progressbar-wrapper wow fadeInUp" data-wow-delay=".7s">
                         <p className="skills__performance-title">Desempenho</p>
                         <div className="circle-progress-box">
-                            <CircularProgressbar
-                                value={percentageSite}
-                                strokeWidth={50}
-                                styles={buildStyles({
-                                    strokeLinecap: "butt"
-                                })}
-                            />
+                            <ProgressBar  variant="danger" animated now={85} />
                         </div>
                     </div>
 
