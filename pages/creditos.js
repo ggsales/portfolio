@@ -1,11 +1,16 @@
 import CreditsArea from "../components/Elements/Credits/CreditsArea";
+import Layout2 from "../components/Layout/Layout2";
 
 
 
-export default function Credits () {
-    return(
+export default function Credits() {
+
+    return (
         <>
-            <CreditsArea/>
+            <Layout2>
+                <CreditsArea />
+            </Layout2>
+
         </>
     )
 }
