@@ -4,8 +4,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
     padding-top: 30px;
     padding-bottom: 150px;
-    border: 3px solid rgb(185, 60, 81);
-    margin: 1px;
+    border-top: 2px solid rgb(185, 60, 81);
     & .btn-contact{
         text-align: center;
         color: #fff;
@@ -15,7 +14,7 @@
         font-weight: 700;
         display: inline-block;
         border: none;
-        background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
+        background-image: linear-gradient(to right, #582da7  0%, #2a0845  51%,  #6441A5 100%);
         background-size: 600%;
         box-shadow: 0 0 5px #fff;
         transition: 0.9s;
@@ -59,7 +58,8 @@
         
         
         & form{
-            background-image: linear-gradient(to right, #000000 20%, #434343  45%, #000000  100%);
+            background: rgb(32,14,50);
+            background: linear-gradient(90deg, rgba(32,14,50,1) 0%, rgba(120,31,74,1) 100%);
             background-size: 200% auto;
             padding: 50px;
             max-width: 380px;
@@ -80,7 +80,7 @@
             & input{
                 background: none;
                 border: none;
-                border-bottom: 2px solid hsla(262, 75%, 45%, 1);
+                border-bottom: 2px solid #fff;
                 margin-bottom: 30px;
                 color: #fff;
                 font-size: 14px;
@@ -88,12 +88,12 @@
                 transition: 0.5s linear;
                 padding-left: 10px;
                 &:hover{
-                    border-bottom: 2px solid rgb(194, 190, 201);
+                    border-bottom: 2px solid rgb(185, 60, 81);
                 }
             }
             & textarea{
                 background:none;
-                border: 2px solid hsla(262, 75%, 45%, 1);
+                border: 2px solid #fff;
                 border-radius: 10px;
                 margin-bottom: 20px;
                 padding: 10px 90px 80px 10px;
@@ -101,7 +101,7 @@
                 color: #fff;
                 transition: 0.5s linear;
                 &:hover{
-                    border: 2px solid #fff;
+                    border: 2px solid rgb(185, 60, 81);
 
                 }
             }
@@ -127,7 +127,7 @@
         flex-direction: column;
         margin-top: 40px;
         border-left: 2px solid #fff;
-        @media #{$xs, $sm, $md}{
+        @media #{$xs, $sm}{
             border-top: 2px solid #fff;
             border-left: 0;
             align-items: center;
@@ -137,7 +137,7 @@
             margin-left: 30px;
             font-weight: normal;
 
-            @media #{$xs, $sm, $md}{
+            @media #{$xs, $sm }{
                 margin-left: 0;
                 padding: 8px 100px;
             }

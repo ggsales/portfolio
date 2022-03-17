@@ -21,9 +21,9 @@ body {
   padding: 0;
 }
 .row{
-  @media #{$xs, $sm} {
+ 
     --bs-gutter-x: 0;
-  }
+  
     
 }
 

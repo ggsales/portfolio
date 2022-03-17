@@ -1,6 +1,5 @@
 .footer{
-    background-color: #923cb5;
-    background-image: linear-gradient(147deg, #653479 0%, #000000 74%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #7c53a5;
     padding-left: 150px;
     padding-right: 150px;
     @media #{$xs, $sm}{
@@ -17,7 +16,7 @@
                 text-decoration: none;
                 font-weight: 500;
                 border-bottom: 1px solid rgb(185, 60, 81);
-                font-size: 13px;
+                font-size: 10px;
                 transition: 0.5s linear;
                 &:hover{
                     color: rgb(185, 60, 81);
