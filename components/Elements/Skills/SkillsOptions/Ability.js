@@ -5,8 +5,8 @@ import "react-circular-progressbar/dist/styles.css";
 
 
 export default function Ability() {
-    const percentageApp = 66;
-    const percentageSite = 90;
+    const percentageApp = 60;
+    const percentageSite = 85;
     return (
         <>
             <div className="row">
