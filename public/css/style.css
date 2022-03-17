@@ -9055,18 +9055,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     .credits {
       height: auto; } }
   .credits .arrow-back {
+    margin-top: 10px;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
+    margin-left: 2px;
     align-items: center; }
+    .credits .arrow-back::after {
+      content: "Voltar";
+      font-family: "Roboto", sans-serif;
+      margin-left: 5px; }
     .credits .arrow-back:hover {
       color: #ff4b4b; }
-    .credits .arrow-back span {
-      margin-left: 5px;
-      font-family: "Roboto", sans-serif;
-      font-size: 20px; }
   .credits__links {
     margin-top: 30px;
     display: flex;

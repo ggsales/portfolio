@@ -8,7 +8,7 @@ export default function CreditsArea(){
         <section className="credits">
             <div className="container">
                 <div className="row">
-                    <a href="/" className="fas fa-angle-left arrow-back"><span>Voltar</span></a>
+                    <Link href="/"><a className="fas fa-angle-left arrow-back"></a></Link>
                     <div className="credits__links">
                         <h1 className="wow fadeInDown">Abaixo os devidos créditos a todas as imagens presentes no site</h1>
                         <ul className="wow fadeInLeft" data-wow-delay=".5s">

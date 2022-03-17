@@ -6,21 +6,23 @@
         height: auto;
     }
     & .arrow-back{
+        margin-top: 10px;
         color: #fff;
         font-size: 20px;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 20px;
         display: flex;
+        margin-left: 2px;
         align-items: center;
+        &::after{
+            content: "Voltar";
+            font-family: $roboto;
+            margin-left: 5px;
+        }
         &:hover{
             color: rgb(255, 75, 75);
         }
 
-        & span{
-            margin-left: 5px;
-            font-family: $roboto;
-            font-size: 20px;
-        }
     }
 
     &__links{
