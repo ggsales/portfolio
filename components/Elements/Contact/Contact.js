@@ -18,7 +18,7 @@ export default function Contact() {
                 <div className="row">
                     <div className="col-lg-6 offset-lg-1 col-xl-5 offset-xl-2">
                         <div className="contact__form-area wow fadeInUp" data-wow-delay="0.5s">
-                            <h6 className="contact__form-title">Envie uma mensagem preechendo o formulário abaixo.</h6>
+                            <h6 className="contact__form-title">Envie uma mensagem preenchendo o formulário abaixo.</h6>
                             <Form />
                         </div>
                     </div>
