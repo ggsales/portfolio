@@ -23,6 +23,7 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <meta charSet="utf-8" />
       <meta name="language" content="pt-BR" />
+      <link rel="shortcut icon" href="/img/favicon.ico" />
       <title>Portfólio</title>
     </Head>
 
