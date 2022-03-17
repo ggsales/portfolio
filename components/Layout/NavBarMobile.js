@@ -1,17 +1,9 @@
 import React from 'react'
 import { Link } from 'react-scroll/modules';
 import MetisMenu from 'metismenujs';
-import { useState, useEffect, useLayoutEffect } from "react";
+import {useEffect, useLayoutEffect } from "react";
 
 export default function NavBarMobile() {
-    const [tabCurrent, setTabCurrent] = useState("inicio");
-
-    const handleNextCurrent = (currentItem) => {
-        setTabCurrent(currentItem)
-    }
-
-
-
     useEffect(() => {
         new MetisMenu("#metismenu");
     }, []);
@@ -22,52 +14,48 @@ export default function NavBarMobile() {
             <ul className="metismenu text-muted" id='metismenu'>
                 <li>
                     <Link to='hero__area'
+                        activeClass='actived-mobile'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "inicio" ? "actived-mobile" : undefined}
-                        onClick={() => handleNextCurrent("inicio")}>
+                        duration={500}>
                         Início
                     </Link>
                 </li>
 
                 <li>
                     <Link to="introduction__area"
-                        spy={true} smooth={true}
-                        duration={500}
-                        className={tabCurrent === "introduction" ? "actived-mobile" : undefined}
-                        onClick={() => handleNextCurrent("introduction")}>
+                        activeClass='actived-mobile'
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
                         Introdução
                     </Link>
                 </li>
                 <li>
                     <Link to="skills"
+                        activeClass='actived-mobile'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "skills" ? "actived-mobile" : undefined}
-                        onClick={() => handleNextCurrent("skills")}>
+                        duration={500}>
                         Conhecimentos
                     </Link>
                 </li>
                 <li>
                     <Link to="cases"
+                        activeClass='actived-mobile'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "cases" ? "actived-mobile" : undefined}
-                        onClick={() => handleNextCurrent("cases")}>
-                        Experiências
+                        duration={500}>
+                        Cases
                     </Link>
                 </li>
 
                 <li>
                     <Link to="contact"
+                        activeClass='actived-mobile'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "contact" ? "actived-mobile" : undefined}
-                        onClick={() => handleNextCurrent("contact")}>
+                        duration={500}>
                         Contato
                     </Link>
                 </li>
