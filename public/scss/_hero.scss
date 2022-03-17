@@ -5,6 +5,9 @@
 .hero{
     &__area{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;  
+        @media #{$xs, $sm, $md}{
+            padding-bottom: 120px;
+        }
         & .text-hero-wrapper{
             @media #{$md, $sm}{
                 display: flex;

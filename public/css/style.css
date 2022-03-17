@@ -8295,6 +8295,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 /*----------------------------------------*/
 .hero__area {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9; }
+  @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero__area {
+      padding-bottom: 120px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
     .hero__area .text-hero-wrapper {
       display: flex;
