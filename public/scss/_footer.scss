@@ -3,6 +3,9 @@
     background-image: linear-gradient(147deg, #653479 0%, #000000 74%);
     padding-left: 150px;
     padding-right: 150px;
+    @media #{$xs, $sm}{
+        padding: 0;
+    }
 
         &__box-credits{
             text-align: center;
@@ -14,6 +17,10 @@
                 font-weight: 500;
                 border-bottom: 1px solid rgb(185, 60, 81);
                 font-size: 13px;
+                transition: 0.5s linear;
+                &:hover{
+                    color: rgb(185, 60, 81);
+                }
             }
         }
 
@@ -26,6 +33,7 @@
             align-items: center;
 
             & p{
+                padding-top: 5px;
                 font-size: 13px;
                 font-weight: 700;
                 text-align: center;

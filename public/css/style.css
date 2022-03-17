@@ -9019,6 +9019,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-image: linear-gradient(147deg, #653479 0%, #000000 74%);
   padding-left: 150px;
   padding-right: 150px; }
+  @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+    .footer {
+      padding: 0; } }
   .footer__box-credits {
     text-align: center;
     margin-bottom: 20px; }
@@ -9028,13 +9031,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       text-decoration: none;
       font-weight: 500;
       border-bottom: 1px solid #b93c51;
-      font-size: 13px; }
+      font-size: 13px;
+      transition: 0.5s linear; }
+      .footer__box-credits a:hover {
+        color: #b93c51; }
   .footer .box-divider {
     border-top: 3px solid #b93c51;
     display: flex;
     justify-content: center;
     align-items: center; }
     .footer .box-divider p {
+      padding-top: 5px;
       font-size: 13px;
       font-weight: 700;
       text-align: center;

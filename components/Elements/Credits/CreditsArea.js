@@ -10,8 +10,8 @@ export default function CreditsArea(){
                 <div className="row">
                     <a href="/" className="fas fa-angle-left arrow-back"><span>Voltar</span></a>
                     <div className="credits__links">
-                        <h1>Abaixo os devidos créditos a todas as imagens presentes no site</h1>
-                        <ul>
+                        <h1 className="wow fadeInDown">Abaixo os devidos créditos a todas as imagens presentes no site</h1>
+                        <ul className="wow fadeInLeft" data-wow-delay=".5s">
                             <li><Link href="https://storyset.com/illustration/hand-coding/bro"><a>Imagem - hero</a></Link></li>
                             <li><Link href="https://storyset.com/illustration/account/pana"><a>Imagem 1 - introdução</a></Link></li>
                             <li><Link href="https://storyset.com/illustration/coding-workshop/amico"><a>Imagem 2 - introdução</a></Link></li>
@@ -23,7 +23,7 @@ export default function CreditsArea(){
                             <li><Link href="https://www.flaticon.com/br/icone-gratis/sass_5968358?term=sass&page=1&position=2&page=1&position=2&related_id=5968358&origin=search"><a>Icon - Sass</a></Link></li>
                             <li><Link href="https://www.flaticon.com/br/icone-gratis/js_5968292?term=javascript&page=1&position=5&page=1&position=5&related_id=5968292&origin=search"><a>Icon - Javascript</a></Link></li>
                             <li><Link href="https://icon-icons.com/icon/react-original-logo/146374"><a>Icon - React</a></Link></li>
-                            <li><Link href="https://icon-icons.com/icon/NextJS/132160"><a>Icon - Nextjs</a></Link></li>
+                            <li><Link href="https://icon-icons.com/icon/NextJS/132160"><a>Icon - NextJs</a></Link></li>
                             <li><Link href="https://www.flaticon.com/free-icon/bootstrap_5968672?term=bootstrap&page=1&position=3&page=1&position=3&related_id=5968672&origin=search"><a>Icon- bootstrap</a></Link></li>
                         </ul>
                     </div>

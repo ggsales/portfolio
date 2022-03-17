@@ -25,12 +25,12 @@ export default function Header() {
             <div id="header-sticky" className={`header__area header__transparent-2 header__padding-2 ${scroll ? "sticky-2" : ""}`}>
                <div className="container">
                   <div className="row align-items-center">
-                     <div className="col-xxl-8 col-xl-8 col-lg-9 d-none d-lg-block pt-10">
+                     <div className="col-xxl-8 col-xl-9 col-lg-9 d-none d-lg-block pt-10">
                         <div className="main-menu d-flex flex-row-reverse">
                            <NavBarMain />
                         </div>
                      </div>
-                     <div className="col-xxl-4 col-xl-4 col-lg-3 col-md-6 col-6">
+                     {/*<div className="col-xxl-4 col-xl-4 col-lg-3 col-md-6 col-6">
                         <div className='d-flex align-items-center justify-content-end'>
                            <div className='select-wrapper fas fa-angle-down'>
                               <select defaultValue="" id="translate-btn">
@@ -40,8 +40,8 @@ export default function Header() {
                               </select>
                            </div>
                         </div>
-                     </div>
-                     <div className="col-xxl-1 col-xl-1 col-lg-1 col-md-6 col-6">
+                        </div> */}
+                     <div className="col-xxl-1 col-xl-1 col-lg-1 col-md-12 ">
                         <div className="header__right text-end d-flex align-items-center justify-content-end">
                            <div className="sidebar__menu d-lg-none">
                               <div onClick={setToggled} className="sidebar-toggle-btn" id="sidebar-toggle">

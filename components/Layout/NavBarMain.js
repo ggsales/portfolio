@@ -1,75 +1,57 @@
 import React from 'react'
 import { Link } from 'react-scroll/modules';
-import { useState, useEffect } from 'react'
 
 export default function NavBarMain() {
-    const [tabCurrent, setTabCurrent] = useState("inicio")
-
-    const handleNextCurrent = (currentItem) => {
-        setTabCurrent(currentItem)
-    }
-
-
-
 
     return (
         <nav>
             <ul>
                 <li>
                     <Link to='hero__area'
+                        activeClass='actived'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "inicio" ? "actived" : undefined}
-                        onClick={() => handleNextCurrent("inicio")}>
+                        duration={500}>
                         Início
                     </Link>
                 </li>
 
                 <li>
                     <Link to="introduction__area"
+                        activeClass='actived'
                         spy={true} smooth={true}
-                        duration={500}
-                        className={tabCurrent === "introduction" ? "actived" : undefined}
-                        onClick={() => handleNextCurrent("introduction")}>
+                        duration={500}>
                         Introdução
                     </Link>
                 </li>
                 <li>
                     <Link to="skills"
+                        activeClass='actived'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "skills" ? "actived" : undefined}
-                        onClick={() => handleNextCurrent("skills")}>
+                        duration={500}>
                         Conhecimentos
                     </Link>
                 </li>
                 <li>
                     <Link to="cases"
+                        activeClass='actived'
                         spy={true}
                         smooth={true}
-                        duration={500}
-                        className={tabCurrent === "cases" ? "actived" : undefined}
-                        onClick={() => handleNextCurrent("cases")}>
-                        Experiências
+                        duration={500}>
+                        Cases
                     </Link>
                 </li>
-
                 <li>
-                    <Link to="contact" 
-                        spy={true} 
-                        smooth={true} 
-                        duration={500} 
-                        className={tabCurrent === "contact" ? "actived" : undefined}
-                        onClick={() => handleNextCurrent("contact")}>
+                    <Link to="contact"
+                        activeClass='actived'
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
                         Contato
                     </Link>
                 </li>
-                
             </ul>
         </nav>
-
-
     )
 }
