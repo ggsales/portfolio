@@ -45,6 +45,9 @@
             &:hover{
                 color: rgb(255, 70, 70);
             }
+            @media #{$xs, $sm, $md}{
+                width: 160px;
+             }
             & .actived{
                 border-bottom: 1px solid rgb(185, 60, 81);
             }

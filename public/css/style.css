@@ -8576,6 +8576,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       transition: 0.6s linear; }
       .skills__btn-box button:hover {
         color: #ff4646; }
+      @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+        .skills__btn-box button {
+          width: 160px; } }
       .skills__btn-box button .actived {
         border-bottom: 1px solid #b93c51; }
   @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
