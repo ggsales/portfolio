@@ -1,4 +1,53 @@
 .credits{
     height: 100vh;
+    padding-bottom: 150px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
+    @media #{$xs, $sm}{
+        height: auto;
+    }
+    & .arrow-back{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        &:hover{
+            color: rgb(255, 75, 75);
+        }
+
+        & span{
+            margin-left: 5px;
+            font-family: $roboto;
+            font-size: 20px;
+        }
+    }
+
+    &__links{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & ul{
+            margin-top: 50px;
+            & li{
+                color: #fff;
+                padding-bottom: 10px;
+            }
+        }
+        & a{
+            color: rgb(255, 75, 75);
+            font-weight: 700;
+            &:hover{
+             text-decoration: underline;       
+            }
+        }
+        & h1{
+            font-size: 20px;
+            border-bottom: 1px solid rgb(255, 75, 75);
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+        }
+    }
 }
