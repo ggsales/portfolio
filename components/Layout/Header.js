@@ -3,13 +3,10 @@ import Link from 'next/link'
 import { useState, useEffect } from "react";
 import NavBarMobile from './NavBarMobile';
 import NavBarMain from './NavBarMain';
-import { animateScroll } from 'react-scroll'
 
 export default function Header() {
    const [isToggled, setToggled] = useState(false);
    const toggleTrueFalse = () => setToggled(!isToggled);
-   const [currentNav, setCurrentNav] = useState("home")
-
    const [scroll, setScroll] = useState(false);
 
    useEffect(() => {
