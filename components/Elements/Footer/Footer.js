@@ -6,12 +6,12 @@ export default function Footer() {
         <footer className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 footer__box-credits wow fadeInUp" data-wow-delay=".5s">
+                    <div className="col-12 footer__box-credits wow fadeInUp" data-wow-delay=".3s">
                         <Link href="/creditos"><a>Créditos</a></Link>
                     </div>
                 </div>
                 <div className="container">
-                    <div className="box-divider wow fadeInUp" data-wow-delay=".5s">
+                    <div className="box-divider wow fadeInUp" data-wow-delay=".3s">
                         <p>Copyright © 2022 All Rights Reserved - Giovani Sales</p>
                     </div>
                 </div>
