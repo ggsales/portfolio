@@ -11,7 +11,7 @@ export default function Form() {
     const form = useRef();
 
     const onSubmit = (e) => {
-        emailjs.sendForm('service_igdytsf', 'portfolio_api', form.current, 'A0dMV-0leATSRjiRv')
+        emailjs.sendForm(process.env.NEXT_PUBLIC_TOKEN_SERVICE_KEY, 'portfolio_api', form.current, process.env.NEXT_PUBLIC_TOKEN_EMAIL_KEY )
             .then((result) => {
                 setFormSuccess(true)
             }, (error) => {
