@@ -13,10 +13,9 @@ export default function Form() {
     const onSubmit = (e) => {
         emailjs.sendForm('service_igdytsf', 'portfolio_api', form.current, 'A0dMV-0leATSRjiRv')
             .then((result) => {
-                console.log(result.text);
                 setFormSuccess(true)
             }, (error) => {
-                console.log(error.text);
+                
             });
 
     }
