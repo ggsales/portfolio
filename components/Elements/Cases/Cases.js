@@ -63,7 +63,7 @@ export default function Cases() {
                             <div className="case case-mobile-2">
                                 <img src="./img/cases/buffet-lavida.png" alt="Buffet-laVida-site" />
                                 <div className="cases__full-overlay">
-                                <div className="cases__content-box-cases">
+                                    <div className="cases__content-box-cases">
                                         <h3>Website - Buffet La Vida</h3>
                                         <Link href="https://buffetlavida.com.br/"><button>Acessar</button></Link>
                                     </div>
@@ -72,7 +72,7 @@ export default function Cases() {
                             <div className="case case-mobile-3">
                                 <img src="./img/cases/alurakut.png" alt="projeto-alurakut" />
                                 <div className="cases__full-overlay">
-                                <div className="cases__content-box-cases">
+                                    <div className="cases__content-box-cases">
                                         <h3>Alurakut - Imersão React Alura 2021</h3>
                                         <Link href="https://alurakut-ggsales.vercel.app/login"><button>Acessar</button></Link>
                                     </div>
@@ -81,8 +81,10 @@ export default function Cases() {
                         </Slider>
                     </div>
                 </div>
+                <div className="cases__link-repositories wow fadeInUp" data-wow-delay=".3s">
+                    <p>Também possuo pequenos projetos de estudo, esses podem ser encontrados clicando<Link href="https://github.com/ggsales?tab=repositories">aqui</Link></p>
+                </div>
             </div>
-
         </section>
     )
 }
