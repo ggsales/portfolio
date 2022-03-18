@@ -46,7 +46,7 @@ export default function Cases() {
     return (
         <section className="cases">
             <h1 className="cases__title">Cases</h1>
-            <p className="cases__subtitle">Abaixo estão todos os meus cases desenvolvidos até hoje.</p>
+            <p className="cases__subtitle"> Todos os meus cases desenvolvidos até hoje.</p>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-10 col-lg-8 offset-lg-2 offset-sm-1">
