@@ -4,6 +4,7 @@ export default function Technologies() {
     return (
         <>
             <div className="container">
+                <p className="skills__subtitle">Abaixo, estão as tecnologias com que trabalho.</p>
                 <div className="row">
                     <div className="col-lg-12 skills__technologies-box">
                         <div className="row">
