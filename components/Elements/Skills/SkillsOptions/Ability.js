@@ -7,7 +7,7 @@ export default function Ability() {
     return (
         <>
             <div className="row">
-            <p className="skills__subtitle">Como programador Front-end, atuo nos modelos de desenvolvimento Web. Abaixo, é possivel visualizar quais são, e também qual o meu desempenho na produção em cada um.</p>
+            <p className="skills__subtitle">Como programador Front-end, atuo nos modelos de desenvolvimento Web. Abaixo, é possivel visualizar quais são, e também qual o meu atual desempenho na produção em cada um.</p>
                 <div className="col-lg-6 mobile-border">
                     <div className="skills__ability-box wow fadeInLeft" data-wow-delay=".5s">
                         <img src="./img/skills/webapp.png" alt="" className="skills__img-ability" />
