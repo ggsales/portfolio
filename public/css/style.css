@@ -8824,27 +8824,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         /* change the direction of the change here */
         color: #fff;
         text-decoration: none; }
-
-.btn-grad {
-  background-image: linear-gradient(to right, #6441A5 0%, #2a0845 51%, #6441A5 100%); }
-
-.btn-grad {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block; }
-
-.btn-grad:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none; }
+  .cases__link-repositories {
+    margin-top: 80px;
+    text-align: center; }
+    .cases__link-repositories p {
+      color: #fff; }
+    .cases__link-repositories a {
+      color: #b93c51;
+      font-size: 22px;
+      margin-left: 5PX;
+      text-decoration: underline;
+      transition: 0.5s linear; }
+      .cases__link-repositories a:hover {
+        color: #db2929; }
 
 .contact {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), #AB7ED9;
