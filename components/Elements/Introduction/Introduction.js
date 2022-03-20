@@ -13,7 +13,7 @@ export default function Introduction() {
             </div>
             <div className="row align-items-center">
                 <div className="col-lg-4 offset-lg-2 col-xl-3  offset-xl-2 col-xxl-3 offset-xxl-2 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <img src="./img/introduction/about-2.png" alt="" className="introduction__img" />
+                    <img src="./img/introduction/about-2.png" alt="imagem ilustrativa do tema 'sobre mim' " className="introduction__img" />
                 </div>
                 <div className="col-lg-4 col-xs-12 col-sm-5 wow fadeInLeft" data-wow-delay="1.0s">
                     <div className="introduction__box-contents">
@@ -30,12 +30,12 @@ export default function Introduction() {
                     </div>
                 </div>
                 <div className="col-lg-3 col-xs-12 col-sm-5 introduction__mobile-flex-img wow fadeInUp" data-wow-delay=".5s">
-                    <img src="./img/introduction/study-progress.png" alt="" className="introduction__img" />
+                    <img src="./img/introduction/study-progress.png" alt="imagem ilustrativa do tema 'formação' " className="introduction__img" />
                 </div>
             </div>
             <div className="row align-items-center">
                 <div className="col-lg-4 offset-lg-2 col-xl-3  offset-xl-2 col-xxl-3 offset-xxl-2 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <img src="./img/introduction/code-progress.png" alt="" className="introduction__img" />
+                    <img src="./img/introduction/code-progress.png" alt="imagem ilustrativa do tema 'Jornada como desenvolvedor" className="introduction__img" />
                 </div>
                 <div className="col-lg-5 col-xs-12 col-sm-6">
                     <div className="introduction__box-contents wow fadeInLeft" data-wow-delay="1.0s">
