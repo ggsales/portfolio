@@ -13,7 +13,6 @@ export default function Contact() {
                     <div className="col-12">
                         <h3 className="contact__title">Contato</h3>
                     </div>
-
                 </div>
                 <div className="row">
                     <div className="col-lg-6 offset-lg-1 col-xl-5 col-md-6 offset-xl-2">
