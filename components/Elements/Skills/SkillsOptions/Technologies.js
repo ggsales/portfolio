@@ -45,7 +45,10 @@ export default function Technologies() {
                                 <img src="./img/technologies/bootstrap.png" alt="bootstrap-icon" />
                                 <h6>BOOTSTRAP</h6>
                             </div>
-
+                            <div className="col-sm-3 card-tech">
+                                <img src="./img/technologies/git.png" alt="git-icon" />
+                                <h6>Git</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
