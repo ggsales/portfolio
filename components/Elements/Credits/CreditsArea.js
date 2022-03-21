@@ -25,6 +25,7 @@ export default function CreditsArea(){
                             <li><Link href="https://icon-icons.com/icon/react-original-logo/146374"><a>Icon - React</a></Link></li>
                             <li><Link href="https://icon-icons.com/icon/NextJS/132160"><a>Icon - NextJs</a></Link></li>
                             <li><Link href="https://www.flaticon.com/free-icon/bootstrap_5968672?term=bootstrap&page=1&position=3&page=1&position=3&related_id=5968672&origin=search"><a>Icon - Bootstrap</a></Link></li>
+                            <li><Link href="https://icons8.com/icon/20906/git"><a>Icon - Git</a></Link></li>
                             <li><Link href="https://www.flaticon.com/download/icon/landing/2282188?format=png&size=64&type=standard"><a>Icon - Front-end</a></Link></li>
                         </ul>
                     </div>
