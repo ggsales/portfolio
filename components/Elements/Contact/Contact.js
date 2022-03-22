@@ -28,6 +28,7 @@ export default function Contact() {
                             <Link href="https://api.whatsapp.com/send?phone=5511942729775&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio!%20Poder%C3%ADamos%20conversar%20%3F"><button className="fab fa-whatsapp btn-contact" /></Link>
                             <Link href="https://github.com/ggsales"><button className="fab fa-github btn-contact" /></Link>
                             <Link href="https://www.linkedin.com/in/giovanisales/"><button className="fab fa-linkedin btn-contact" /></Link>
+                            <Link href="mailto:giovanisales14@gmail.com"><button className="fas fa-envelope btn-contact "></button></Link>
                         </div>
                     </div>
                 </div>

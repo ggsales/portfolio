@@ -29,7 +29,7 @@ export default function Form() {
                     {...register("name", {
                         required: true,
                         minLength: 4,
-                        pattern: /^[A-Za-z0-9 ]+$/i
+                        pattern: /^[A-Za-z]+/
                     })}
                     name="name"
                 />
