@@ -19,8 +19,8 @@ export default function Cases() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     infinite: true,
                     dots: true,
                 },
@@ -70,6 +70,15 @@ export default function Cases() {
                                 </div>
                             </div>
                             <div className="case case-mobile-3">
+                                <img src="./img/cases/tela-login-desktop.png" alt="tela-de-login-clinica-medica" />
+                                <div className="cases__full-overlay">
+                                    <div className="cases__content-box-cases">
+                                        <h3>Tela de Login - Clínica Médica(Projeto pessoal)</h3>
+                                        <Link href="https://login-clinica-medica.vercel.app/"><button>Acessar</button></Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="case case-mobile-4">
                                 <img src="./img/cases/alurakut.png" alt="projeto-alurakut" />
                                 <div className="cases__full-overlay">
                                     <div className="cases__content-box-cases">
@@ -78,6 +87,7 @@ export default function Cases() {
                                     </div>
                                 </div>
                             </div>
+                    
                         </Slider>
                     </div>
                 </div>

@@ -56,11 +56,17 @@
         }
         & .case-mobile-3{
             @media #{$xs}{
-                background-image: url(../img/cases/alurakut-mobile.png);
+                
+                background-image: url(../img/cases/tela-login-mobile.png);
             }
-
         }
-        & .case-mobile-1, .case-mobile-2, .case-mobile-3{
+        & .case-mobile-4{
+            @media #{$xs}{
+                background-image: url(../img/cases/alurakut-mobile.png);
+                
+            }
+        }
+        & .case-mobile-1, .case-mobile-2, .case-mobile-3, .case-mobile-4{
             @media #{$xs}{
                 height: 550px;
                 background-size: cover;

@@ -8742,9 +8742,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       background-image: url(../img/cases/buffet-lavida-mobile.png); } }
   @media (max-width: 575px) {
     .cases .carousel-cases .case-mobile-3 {
+      background-image: url(../img/cases/tela-login-mobile.png); } }
+  @media (max-width: 575px) {
+    .cases .carousel-cases .case-mobile-4 {
       background-image: url(../img/cases/alurakut-mobile.png); } }
   @media (max-width: 575px) {
-    .cases .carousel-cases .case-mobile-1, .cases .carousel-cases .case-mobile-2, .cases .carousel-cases .case-mobile-3 {
+    .cases .carousel-cases .case-mobile-1, .cases .carousel-cases .case-mobile-2, .cases .carousel-cases .case-mobile-3, .cases .carousel-cases .case-mobile-4 {
       height: 550px;
       background-size: cover;
       background-repeat: no-repeat;
