@@ -27,6 +27,6 @@ Projeto criado com o intuito de apresentar um pouco sobre mim, e também para mo
     <li><a href="https://react-hook-form.com/">React-hook-form</a></li>
     <li><a href="https://wowjs.uk/">Wowjs</a></li>
     <li><a href="https://react-slick.neostack.com/">React-slick</li>
-    <li><a href="emailjs.com">EmailJs</a></li>
+    <li><a href="https://emailjs.com">EmailJs</a></li>
   </ul>
 </div>
